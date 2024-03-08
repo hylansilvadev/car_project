@@ -1,0 +1,16 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Carros</title>
+    </head>
+    {% block content %}
+    <body>
+        <ul>
+            {% for car in cars%}
+                <li>Carro {{car.id}}: {{car.brand}} {{car.model}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+    {% endblock %}
+</html>
